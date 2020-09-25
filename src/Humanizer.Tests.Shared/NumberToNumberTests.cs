@@ -40,6 +40,13 @@ namespace Humanizer.Tests
         }
 
         [Fact]
+        public void DecimalToTens()
+        {
+            const decimal number = 1;
+            Assert.Equal(10m, number.Tens());
+        }
+
+        [Fact]
         public void IntToHundreds()
         {
             const int number = 2;
@@ -72,6 +79,13 @@ namespace Humanizer.Tests
         {
             const double number = 2;
             Assert.Equal(200d, number.Hundreds());
+        }
+
+        [Fact]
+        public void DecimalToHundreds()
+        {
+            const decimal number = 2;
+            Assert.Equal(200m, number.Hundreds());
         }
 
         [Fact]
@@ -110,6 +124,13 @@ namespace Humanizer.Tests
         }
 
         [Fact]
+        public void DecimalToThousands()
+        {
+            const decimal number = 3;
+            Assert.Equal(3000m, number.Thousands());
+        }
+
+        [Fact]
         public void IntToMillions()
         {
             const int number = 4;
@@ -145,6 +166,13 @@ namespace Humanizer.Tests
         }
 
         [Fact]
+        public void DecimalToMillions()
+        {
+            const decimal number = 4;
+            Assert.Equal(4000000m, number.Millions());
+        }
+
+        [Fact]
         public void IntToBillions()
         {
             const int number = 1;
@@ -177,6 +205,13 @@ namespace Humanizer.Tests
         {
             const double number = 1;
             Assert.Equal(1000000000d, number.Billions());
+        }
+
+        [Fact]
+        public void DecimalToBillions()
+        {
+            const decimal number = 1;
+            Assert.Equal(1000000000m, number.Billions());
         }
     }
 }
