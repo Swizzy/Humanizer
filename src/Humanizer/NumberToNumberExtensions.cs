@@ -51,6 +51,15 @@ namespace Humanizer
         {
             return input * 10;
         }
+        
+        /// <summary>
+        /// 5.Tens == 50
+        /// </summary>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static decimal Tens(this decimal input)
+        {
+            return input * 10;
+        }
 
         /// <summary>
         /// 4.Hundreds() == 400
@@ -93,6 +102,15 @@ namespace Humanizer
         /// </summary>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static double Hundreds(this double input)
+        {
+            return input * 100;
+        }
+        
+        /// <summary>
+        /// 4.Hundreds() == 400
+        /// </summary>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static decimal Hundreds(this decimal input)
         {
             return input * 100;
         }
@@ -141,6 +159,15 @@ namespace Humanizer
         {
             return input * 1000;
         }
+        
+        /// <summary>
+        /// 3.Thousands() == 3000
+        /// </summary>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static decimal Thousands(this decimal input)
+        {
+            return input * 1000;
+        }
 
         /// <summary>
         /// 2.Millions() == 2000000
@@ -186,6 +213,15 @@ namespace Humanizer
         {
             return input * 1000000;
         }
+        
+        /// <summary>
+        /// 2.Millions() == 2000000
+        /// </summary>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static decimal Millions(this decimal input)
+        {
+            return input * 1000000;
+        }
 
         /// <summary>
         /// 1.Billions() == 1000000000 (short scale)
@@ -228,6 +264,15 @@ namespace Humanizer
         /// </summary>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static double Billions(this double input)
+        {
+            return input * 1000000000;
+        }
+        
+        /// <summary>
+        /// 1.Billions() == 1000000000 (short scale)
+        /// </summary>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static decimal Billions(this decimal input)
         {
             return input * 1000000000;
         }
